@@ -1,0 +1,54 @@
+* -text
+
+# Document files
+*.doc  diff=astextplain
+*.DOC	diff=astextplain
+*.docx	diff=astextplain
+*.DOCX	diff=astextplain
+*.dot	diff=astextplain
+*.DOT	diff=astextplain
+*.pdf	diff=astextplain
+*.PDF	diff=astextplain
+*.rtf	diff=astextplain
+*.RTF	diff=astextplain
+
+# Binary files
+*.png 	binary
+*.jpg 	binary
+*.gif 	binary
+*.zip 	binary
+*.jar 	binary
+*.doc 	binary
+*.docx 	binary
+*.dot 	binary
+*.xls 	binary
+*.otf 	binary
+*.eot 	binary
+*.ttf 	binary
+*.ttf 	binary
+*.woff 	binary
+*.dat 	binary
+
+*.java 			text eol=lf
+*.xml 			text eol=lf
+*.xsl 			text eol=lf
+*.csv 			text eol=lf
+*.conf 			text eol=lf
+*.properties 	text eol=lf
+*.jsp 			text eol=lf
+*.css 			text eol=lf
+*.scss 			text eol=lf
+*.svg 			text eol=lf
+*.js 			text eol=lf
+*.html 			text eol=lf
+*.episode 		text eol=lf
+*.xsd 			text eol=lf
+*.dtd 			text eol=lf
+
+# Visual Studio Generated Files
+*.cs     text eol=lf diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
