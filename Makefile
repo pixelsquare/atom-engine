@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -shared -g -Wall -Wunknown-pragmas
-ATOMFLAGS = -D_USRDLL -DATOM_STATIC -static-libgcc -static-libstdc++ -lglut32 -lopengl32 -lglu32
+ATOMFLAGS = -D_USRDLL -DATOM_STATIC -static-libgcc -static-libstdc++
 
 SRC_DIR := src/core
 OBJ_DIR := obj
