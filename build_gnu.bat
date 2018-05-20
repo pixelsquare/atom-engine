@@ -14,8 +14,11 @@ CALL :SetMinGWPath
 :: Set Make Path
 CALL :SetMakePath
 
-:: Set Make Path
+:: Set Msys Path
 CALL :SetMsysPath
+
+:: Set Ming32 Path
+CALL :SetMing32Path
 
 CALL :BuildGCC
 
@@ -70,6 +73,17 @@ IF NOT EXIST "%MSYS_PATH%" (
 SET PATH=%PATH%;%MSYS_PATH%
 EXIT /b 0
 
+:SetMing32Path
+SET MING32_PATH=E:\MinGW\mingw32\bin
+
+IF NOT EXIST "%MING32_PATH%" (
+	ECHO Make Path does not exist.
+	EXIT /b 0
+)
+
+SET PATH=%PATH%;%MING32_PATH%
+EXIT /b 0
+
 :BuildGCC
 ECHO Build started ..
 ECHO.
@@ -82,7 +96,7 @@ ECHO.
 IF ERRORLEVEL 1 (
 	ECHO Build FAILED!
 	CALL :RemoveObjDir
-	REM CALL :RemoveLibDir
+	CALL :RemoveLibDir
 ) ELSE (
 	ECHO Build SUCCES!
 )

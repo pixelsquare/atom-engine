@@ -13,6 +13,7 @@ build: $(OBJS)
 	@echo Building atom library ...
 	@echo
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(OBJS) -o $(LIB_DIR)/atom.dll
+	@echo
 
 compile: $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(basename $(notdir $(wildcard $(SRC_DIR)/*.cpp)))))
 	@echo
@@ -44,4 +45,6 @@ $(OBJ_DIR)/Vector3f.o: $(SRC_DIR)/Vector3f.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 clean:
+	@echo Cleaning binary files ...
 	rm -f $(OBJ_DIR)/*.o *~
+	rm -f $(LIB_DIR)/*.* *~

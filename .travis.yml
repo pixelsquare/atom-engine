@@ -16,7 +16,11 @@ install:
  #  - "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
 before_script:
     - mkdir obj
-script: 
+script:
+    - mkdir obj
+    - mkdir lib
     - make compile
     - make build
     - make clean
+    - rmdir obj
+    - rmdir lib
