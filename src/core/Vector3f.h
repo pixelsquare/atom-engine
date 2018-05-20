@@ -21,8 +21,8 @@ public:
     Vector3f(float vecX, float vecY, float vecZ);
     ~Vector3f();
 
-    // Vector3f &operator=(const Vector3f &rhs);
-    // Vector3f &operator-() const;
+    Vector3f &operator=(const Vector3f &rhs);
+    Vector3f &operator-() const;
 
     // Vector3f &operator+=(const Vector3f &rhs);
     // Vector3f operator+(const Vector3f &op);

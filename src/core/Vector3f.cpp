@@ -39,24 +39,24 @@ Vector3f::~Vector3f()
     z = 0.0f;
 }
 
-// Vector3f &Vector3f::operator=(const Vector3f &rhs)
-// {
-    // this->x = rhs.x;
-    // this->y = rhs.y;
-    // this->z = rhs.z;
+Vector3f &Vector3f::operator=(const Vector3f &rhs)
+{
+    this->x = rhs.x;
+    this->y = rhs.y;
+    this->z = rhs.z;
 
-    // return *this;
-// }
+    return *this;
+}
 
-// Vector3f &Vector3f::operator-() const
-// {
-    // Vector3f *tmp = new Vector3f;
-    // *tmp = *this;
-    // tmp->x = -tmp->x;
-    // tmp->y = -tmp->y;
-    // tmp->z = -tmp->z;
-    // return *tmp;
-// }
+Vector3f &Vector3f::operator-() const
+{
+    Vector3f *tmp = new Vector3f;
+    *tmp = *this;
+    tmp->x = -tmp->x;
+    tmp->y = -tmp->y;
+    tmp->z = -tmp->z;
+    return *tmp;
+}
 
 // Vector3f &Vector3f::operator+=(const Vector3f &rhs)
 // {

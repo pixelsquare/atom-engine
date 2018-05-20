@@ -12,5 +12,7 @@ proj.win32/*
 !proj.win32/*.sln
 
 # Exclude build binaries
+lib
+obj
 src/vs/Debug.*
 src/vs/Release.*
