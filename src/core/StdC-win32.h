@@ -14,7 +14,9 @@
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
 
-//#include <BaseTsd.h>
+#if defined(_WIN32) && defined(WINDOWS)
+#include <BaseTsd.h>
+#endif
 
 //#ifndef __SSIZE_T
 //#define __SSIZE_T
