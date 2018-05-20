@@ -14,14 +14,15 @@
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
 
-#if defined(_WIN32) || defined(WINDOWS)
+#if defined(_WIN32) && defined(WINDOWS)
 #include <BaseTsd.h>
+
+#ifndef __SSIZE_T
+#define __SSIZE_T
+typedef SSIZE_T ssize_t;
+#endif // __SSIZE_T
 #endif
 
-//#ifndef __SSIZE_T
-//#define __SSIZE_T
-//typedef SSIZE_T ssize_t;
-//#endif // __SSIZE_T
 
 #include <float.h>
 
