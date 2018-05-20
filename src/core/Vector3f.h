@@ -21,48 +21,48 @@ public:
     Vector3f(float x, float y, float z);
     ~Vector3f();
 
-    Vector3f &operator=(const Vector3f &rhs);
-    Vector3f &operator-() const;
+    // Vector3f &operator=(const Vector3f &rhs);
+    // Vector3f &operator-() const;
 
-    Vector3f &operator+=(const Vector3f &rhs);
-    Vector3f operator+(const Vector3f &op);
+    // Vector3f &operator+=(const Vector3f &rhs);
+    // Vector3f operator+(const Vector3f &op);
 
-    Vector3f &operator-=(const Vector3f &rhs);
-    Vector3f operator-(const Vector3f &op);
+    // Vector3f &operator-=(const Vector3f &rhs);
+    // Vector3f operator-(const Vector3f &op);
 
-    Vector3f &operator*=(const float scalar);
-    Vector3f operator*(const float scalar);
+    // Vector3f &operator*=(const float scalar);
+    // Vector3f operator*(const float scalar);
 
-    Vector3f &operator*=(const Vector3f &rhs);
-    Vector3f operator*(const Vector3f &op);
+    // Vector3f &operator*=(const Vector3f &rhs);
+    // Vector3f operator*(const Vector3f &op);
 
-    Vector3f &operator/=(const float scalar);
-    Vector3f operator/(const float scalar);
+    // Vector3f &operator/=(const float scalar);
+    // Vector3f operator/(const float scalar);
 
-    Vector3f &operator/=(const Vector3f &rhs);
-    Vector3f operator/(const Vector3f &op);
+    // Vector3f &operator/=(const Vector3f &rhs);
+    // Vector3f operator/(const Vector3f &op);
 
-    bool operator==(const Vector3f &other);
-    bool operator!=(const Vector3f &other);
+    // bool operator==(const Vector3f &other);
+    // bool operator!=(const Vector3f &other);
 
-    bool operator>(const Vector3f &other);
-    bool operator>=(const Vector3f &other);
+    // bool operator>(const Vector3f &other);
+    // bool operator>=(const Vector3f &other);
 
-    bool operator<(const Vector3f &other);
-    bool operator<=(const Vector3f &other);
+    // bool operator<(const Vector3f &other);
+    // bool operator<=(const Vector3f &other);
 
-    float Length();
-    Vector3f &Normalize();
+    // float Length();
+    // Vector3f &Normalize();
 
-    float Dot(const Vector3f& vec1, const Vector3f& vec2);
-    Vector3f Cross(const Vector3f& vec1, const Vector3f& vec2);
+    // float Dot(const Vector3f& vec1, const Vector3f& vec2);
+    // Vector3f Cross(const Vector3f& vec1, const Vector3f& vec2);
 
-    void Print();
+    // void Print();
 
-    static Vector3f ZERO;	static Vector3f FRONT;
-    static Vector3f ONE;		static Vector3f BACK;
-    static Vector3f UP;		static Vector3f RIGHT;
-    static Vector3f DOWN;	static Vector3f LEFT;
+    // static Vector3f ZERO;	static Vector3f FRONT;
+    // static Vector3f ONE;		static Vector3f BACK;
+    // static Vector3f UP;		static Vector3f RIGHT;
+    // static Vector3f DOWN;	static Vector3f LEFT;
 
     float x;
     float y;
