@@ -21,8 +21,6 @@ ATOM_BEGIN
 // Vector3f Vector3f::RIGHT	= Vector3f(1.0f, 0.0f, 0.0f);
 // Vector3f Vector3f::LEFT	= Vector3f(-1.0f, 0.0f, 0.0f);
 
-class Vector3f;
-
 Vector3f::Vector3f()
 : x(0.0f)
 , y(0.0f)
@@ -30,10 +28,7 @@ Vector3f::Vector3f()
 {
 }
 
-Vector3f::Vector3f(float x, float y, float z)
-: x(x)
-, y(y)
-, z(z)
+Vector3f::Vector3f(float vecX, float vecY, float vecZ) : x(vecX), y(vecY), z(vecZ)
 {
 }
 

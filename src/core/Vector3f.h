@@ -18,7 +18,7 @@ class ATOMAPI Vector3f
 {
 public:
     Vector3f();
-    Vector3f(float x, float y, float z);
+    Vector3f(float vecX, float vecY, float vecZ);
     ~Vector3f();
 
     // Vector3f &operator=(const Vector3f &rhs);
