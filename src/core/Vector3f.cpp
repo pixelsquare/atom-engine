@@ -28,9 +28,9 @@ Vector3f::Vector3f()
 {
 }
 
-// Vector3f::Vector3f(float vecX, float vecY, float vecZ) : x(vecX), y(vecY), z(vecZ)
-// {
-// }
+Vector3f::Vector3f(float vecX, float vecY, float vecZ) : x(vecX), y(vecY), z(vecZ)
+{
+}
 
 Vector3f::~Vector3f() 
 { 

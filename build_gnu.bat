@@ -14,6 +14,9 @@ CALL :SetMinGWPath
 :: Set Make Path
 CALL :SetMakePath
 
+:: Set Make Path
+CALL :SetMsysPath
+
 CALL :BuildGCC
 
 PAUSE
@@ -27,11 +30,11 @@ IF EXIST obj RMDIR obj
 EXIT /b 0
 
 :CreateLibDir
-IF NOT EXIST obj MKDIR lib
+IF NOT EXIST lib MKDIR lib
 EXIT /b 0
 
 :RemoveLibDir
-IF EXIST obj RMDIR lib
+IF EXIST lib RMDIR lib
 EXIT /b 0
 
 :SetMinGWPath
@@ -56,17 +59,29 @@ IF NOT EXIST "%MAKE_PATH%" (
 SET PATH=%PATH%;%MAKE_PATH%
 EXIT /b 0
 
+:SetMsysPath
+SET MSYS_PATH=E:\MinGW\msys\1.0\bin
+
+IF NOT EXIST "%MSYS_PATH%" (
+	ECHO Make Path does not exist.
+	EXIT /b 0
+)
+
+SET PATH=%PATH%;%MSYS_PATH%
+EXIT /b 0
+
 :BuildGCC
 ECHO Build started ..
 ECHO.
 
-CALL make
+CALL make all
+CALL make clean
 
 ECHO.
 IF ERRORLEVEL 1 (
 	ECHO Build FAILED!
 	CALL :RemoveObjDir
-	CALL :RemoveLibDir
+	REM CALL :RemoveLibDir
 ) ELSE (
 	ECHO Build SUCCES!
 )

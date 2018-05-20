@@ -11,7 +11,7 @@ LIB_DIR := lib
 atom: $(OBJ_DIR)/vector3f.o
 
 $(OBJ_DIR)/vector3f.o: $(SRC_DIR)/Vector3f.cpp
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $(SRC_DIR)/Vector3f.cpp -o $(OBJ_DIR)/vector3f.o
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $(SRC_DIR)/Vector3f.cpp -o $(OBJ_DIR)/vector3f.o 
 
 clean:
-	rm obj *.o *~ 
+	rm -f $(OBJ_DIR)/*.o *~
