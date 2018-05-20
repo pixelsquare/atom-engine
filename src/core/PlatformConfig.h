@@ -33,9 +33,11 @@
     #pragma warning (disable:4127)
 #endif
 
+#if defined(_WIN32) && defined(_WINDOWS)
 #pragma comment(lib, "opengl32.lib")
 #pragma comment(lib, "glu32.lib")
 #pragma comment(lib, "glut32.lib")
+#endif
 
 #endif // TARGET_PLATFORM == PLATFORM_WIN32
 

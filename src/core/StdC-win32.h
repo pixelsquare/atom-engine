@@ -14,7 +14,7 @@
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
 
-#if defined(_WIN32) && defined(WINDOWS)
+#if defined(_WIN32) || defined(WINDOWS)
 #include <BaseTsd.h>
 #endif
 
@@ -39,7 +39,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#if defined(_WIN32) && defined(WINDOWS)
+#if defined(_WIN32) || defined(WINDOWS)
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdint.h>

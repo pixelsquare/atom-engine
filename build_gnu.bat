@@ -19,19 +19,19 @@ CALL :BuildGCC
 PAUSE
 
 :CreateObjDir
-MKDIR obj
+IF NOT EXIST obj MKDIR obj
 EXIT /b 0
 
 :RemoveObjDir
-RMDIR obj
+IF EXIST obj RMDIR obj
 EXIT /b 0
 
 :CreateLibDir
-MKDIR lib
+IF NOT EXIST obj MKDIR lib
 EXIT /b 0
 
 :RemoveLibDir
-RMDIR lib
+IF EXIST obj RMDIR lib
 EXIT /b 0
 
 :SetMinGWPath

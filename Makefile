@@ -1,8 +1,8 @@
 ALL: atom
 
 CXX = g++
-CXXFLAGS = -shared -g -Wall -Wfatal-errors -Wunknown-pragmas
-ATOMFLAGS = -static-libgcc -std=c++14 -static-libstdc++
+CXXFLAGS = -shared -g -Wall -Wfatal-errors
+ATOMFLAGS = -D_USRDLL -static-libgcc -static-libstdc++
 
 SRC_DIR := src/core
 OBJ_DIR := obj
