@@ -35,7 +35,7 @@ typedef SSIZE_T ssize_t;
 
 #endif // __MINGW32__
 
-#include <math.h>
+#include <cmath>
 #include <string.h>
 #include <stdio.h>
 #include <time.h>

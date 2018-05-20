@@ -9,6 +9,7 @@
 
 #include "Vector3f.h"
 #include <stdio.h>
+#include <cmath>
 
 ATOM_BEGIN
 
