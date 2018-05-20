@@ -17,5 +17,6 @@ install:
 before_script:
     - mkdir obj
 script: 
-    - make
+    - make compile
+    - make build
     - make clean
