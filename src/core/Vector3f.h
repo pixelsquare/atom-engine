@@ -14,7 +14,7 @@
 
 ATOM_BEGIN
 
-class Vector3f
+class ATOMAPI Vector3f
 {
 public:
     Vector3f();
