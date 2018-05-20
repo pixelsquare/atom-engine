@@ -59,10 +59,12 @@
 #include <sys/time.h>
 #endif // __MINGW32__
 
+#if defined(_WIN32) && defined(WINDOWS)
 #if _MSC_VER >= 1600 || defined(__MINGW32__)
 #include <stdint.h>
 #else
 #include "platform/win32/compat/stdint.h"
+#endif
 #endif
 
 
