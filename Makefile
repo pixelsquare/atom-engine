@@ -28,6 +28,7 @@ $(OBJ_DIR)/Physics.o: $(SRC_DIR)/Physics.cpp
 $(OBJ_DIR)/Raycast.o: $(SRC_DIR)/Raycast.cpp
 $(OBJ_DIR)/Sound.o: $(SRC_DIR)/Sound.cpp
 $(OBJ_DIR)/Text.o: $(SRC_DIR)/Text.cpp
+$(OBJ_DIR)/Time.o: $(SRC_DIR)/Time.cpp
 $(OBJ_DIR)/Transform.o: $(SRC_DIR)/Transform.cpp
 
 $(OBJ_DIR)/Color3.o: $(SRC_DIR)/Color3.cpp
