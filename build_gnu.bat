@@ -75,7 +75,7 @@ ECHO Build started ..
 ECHO.
 
 CALL make all
-CALL make clean
+REM CALL make clean
 
 ECHO.
 IF ERRORLEVEL 1 (
