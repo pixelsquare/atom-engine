@@ -16,6 +16,9 @@
 
 ATOM_BEGIN
 
+class Color4;
+class Vector3f;
+
 /* Window Properties */
 struct Window 
 {
