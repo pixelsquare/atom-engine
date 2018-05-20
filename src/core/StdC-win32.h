@@ -34,13 +34,13 @@
 
 #include <math.h>
 #include <string.h>
-#include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
 #include <time.h>
 
 #if defined(_WIN32) && defined(WINDOWS)
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdint.h>
 #include <conio.h>
 #include <Windows.h>
 #include <MMSystem.h>
