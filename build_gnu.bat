@@ -74,7 +74,8 @@ EXIT /b 0
 ECHO Build started ..
 ECHO.
 
-CALL make all
+CALL make compile
+CALL make build
 REM CALL make clean
 
 ECHO.

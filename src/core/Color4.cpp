@@ -8,6 +8,7 @@
 */
 
 #include "Color4.h"
+#include <stdio.h>
 
 ATOM_BEGIN
 

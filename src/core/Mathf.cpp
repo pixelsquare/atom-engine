@@ -8,6 +8,7 @@
 */
 
 #include "Mathf.h"
+#include <cmath>
 
 ATOM_BEGIN
 
@@ -22,7 +23,7 @@ float Mathf::PI() {
 
 double Mathf::Abs(double value) 
 {
-	return abs(value);
+	return fabs(value);
 }
 
 double Mathf::Sin(double value) 
