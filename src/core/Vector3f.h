@@ -59,10 +59,10 @@ public:
 
     void Print();
 
-    // static Vector3f ZERO;	static Vector3f FRONT;
-    // static Vector3f ONE;		static Vector3f BACK;
-    // static Vector3f UP;		static Vector3f RIGHT;
-    // static Vector3f DOWN;	static Vector3f LEFT;
+    static Vector3f ZERO;	static Vector3f FRONT;
+    static Vector3f ONE;		static Vector3f BACK;
+    static Vector3f UP;		static Vector3f RIGHT;
+    static Vector3f DOWN;	static Vector3f LEFT;
 
     float x;
     float y;
