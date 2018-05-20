@@ -40,7 +40,7 @@ $(OBJ_DIR)/Color4.o: $(SRC_DIR)/Color4.cpp
 $(OBJ_DIR)/Mathf.o: $(SRC_DIR)/Mathf.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
-$(OBJ_DIR)/vector3f.o: $(SRC_DIR)/Vector3f.cpp
+$(OBJ_DIR)/Vector3f.o: $(SRC_DIR)/Vector3f.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 clean:
