@@ -1,7 +1,7 @@
 ALL: atom
 
 CXX = g++
-CXXFLAGS = -shared -g -Wall
+CXXFLAGS = -shared -g -Wall -Wunknown-pragmas
 ATOMFLAGS = -D_USRDLL -static-libgcc -static-libstdc++
 
 SRC_DIR := src/core
