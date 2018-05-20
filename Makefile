@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -shared -g -Wall -Wunknown-pragmas
+CXXFLAGS = -shared -g -Wall -Wunknown-pragmas -fPIC
 ATOMFLAGS = -D_USRDLL -DATOM_STATIC -static-libgcc -static-libstdc++
 
 SRC_DIR := src/core
