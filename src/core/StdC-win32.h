@@ -39,11 +39,11 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <time.h>
-#include <Windows.h>
-#include <MMSystem.h>
 
 #if defined(_WIN32) && defined(WINDOWS)
 #include <conio.h>
+#include <Windows.h>
+#include <MMSystem.h>
 #endif
 
 #ifndef M_PI
