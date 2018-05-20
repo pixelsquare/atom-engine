@@ -38,10 +38,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <conio.h>
 #include <time.h>
 #include <Windows.h>
 #include <MMSystem.h>
+
+#if defined(_WIN32) && defined(WINDOWS)
+#include <conio.h>
+#endif
 
 #ifndef M_PI
 #define M_PI      3.14159265358
