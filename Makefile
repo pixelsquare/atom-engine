@@ -30,7 +30,7 @@ $(OBJ_DIR)/Sound.o: $(SRC_DIR)/Sound.cpp
 $(OBJ_DIR)/Text.o: $(SRC_DIR)/Text.cpp
 $(OBJ_DIR)/Transform.o: $(SRC_DIR)/Transform.cpp
 
-$(OBJ_DIR)/color3.o: $(SRC_DIR)/Color3.cpp
+$(OBJ_DIR)/Color3.o: $(SRC_DIR)/Color3.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Color4.o: $(SRC_DIR)/Color4.cpp
