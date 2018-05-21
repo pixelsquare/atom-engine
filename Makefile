@@ -1,6 +1,7 @@
 CXX = g++
-CXXFLAGS = -shared -g -Wall -Wunknown-pragmas -fPIC
-ATOMFLAGS = -D_USRDLL -DATOM_STATIC -static-libgcc -static-libstdc++
+CXXFLAGS = -shared -g -Wall -Wno-unknown-pragmas -fPIC -Wno-unused-function
+ATOMFLAGS = -D_USRDLL -D_WIN32 -DATOM_STATIC -static-libgcc -static-libstdc++
+GLFLAGS = -L/src/gl/glut32/lib -I/src/gl/glut32/include -DGLUT_NO_LIB_PRAGMA -lglut32 -lopengl32 -lglu32
 
 SRC_DIR := src/core
 OBJ_DIR := obj
@@ -12,7 +13,7 @@ OBJS := $(wildcard $(OBJ_DIR:=/*.o))
 build: $(OBJS)
 	@echo Building atom library ...
 	@echo
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(OBJS) -o $(LIB_DIR)/atom.dll
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(OBJS) $(GLFLAGS) -o $(LIB_DIR)/atom.dll
 	@echo
 
 compile: $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(basename $(notdir $(wildcard $(SRC_DIR)/*.cpp)))))
@@ -33,16 +34,19 @@ $(OBJ_DIR)/Time.o: $(SRC_DIR)/Time.cpp
 $(OBJ_DIR)/Transform.o: $(SRC_DIR)/Transform.cpp
 
 $(OBJ_DIR)/Color3.o: $(SRC_DIR)/Color3.cpp
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(GLFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Color4.o: $(SRC_DIR)/Color4.cpp
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(GLFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Mathf.o: $(SRC_DIR)/Mathf.cpp
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(GLFLAGS) -c $^ -o $@
+
+$(OBJ_DIR)/Time.o: $(SRC_DIR)/Time.cpp
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(GLFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Vector3f.o: $(SRC_DIR)/Vector3f.cpp
-	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) $(GLFLAGS) -c $^ -o $@
 
 clean:
 	@echo Cleaning binary files ...

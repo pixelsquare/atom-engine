@@ -13,6 +13,7 @@
 #include "PlatformMacros.h"
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
+#include <Windows.h>
 #include "../gl/glut32/include/glut.h"
 #endif // TARGET_PLATFORM == PLATFORM_WIN32
 

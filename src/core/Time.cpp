@@ -36,8 +36,9 @@ void Time::Reset()
 }
 
 Time::Time()
-: presentTime(0.0f)
-, previousTime(0.0f)
+: previousTime(0.0f)
+, presentTime(0.0f)
+, startTime(0.0f)
 , dt(0.0f)
 , elapsedTime(0.0f)
 {
