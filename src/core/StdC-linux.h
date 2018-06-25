@@ -14,6 +14,8 @@
 
 #if TARGET_PLATFORM == PLATFORM_LINUX
 #include <stdlib.h>
+#include <cstddef>
+#include <cstdlib>
 #endif // TARGET_PLATFORM == PLATFORM_LINUX
 
 #endif // _ATOM_STDC_LINUX_H_
