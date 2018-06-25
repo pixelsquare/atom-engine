@@ -13,6 +13,7 @@
 #include "PlatformMacros.h"
 
 #if TARGET_PLATFORM == PLATFORM_LINUX
+#include <stdlib.h>
 #endif // TARGET_PLATFORM == PLATFORM_LINUX
 
 #endif // _ATOM_STDC_LINUX_H_
