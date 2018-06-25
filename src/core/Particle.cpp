@@ -11,6 +11,7 @@
 #include "Time.h"
 #include "Color3.h"
 #include "PlatformGL.h"
+#include "StdC.h"
 
 ATOM_BEGIN
 
