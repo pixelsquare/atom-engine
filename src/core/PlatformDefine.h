@@ -12,6 +12,8 @@
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
     #include "PlatformDefine-win32.h"
+#elif TARGET_PLATFORM == PLATFORM_LINUX
+    #include "PlatformDefine-linux.h"
 #endif
 
 #endif // _ATOM_PLATFORM_DEFINE_H_
