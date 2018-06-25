@@ -13,8 +13,9 @@
 #include "PlatformMacros.h"
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
-#include "StdC-win32.h"
-#if TARGET_PLATFORM == PLATFORM_LINUX
+    #include "StdC-win32.h"
+#elif TARGET_PLATFORM == PLATFORM_LINUX
+    #include "StdC-linux.h"
 #endif
 
 #endif // _ATOM_STDC_H_
