@@ -12,8 +12,8 @@
 ATOM_BEGIN
 
 Sound::Sound()
-    : mute(false)
-    , loop(false)
+: mute(false)
+, loop(false)
 {
 }
 
@@ -28,13 +28,10 @@ Sound* sound = new Sound;
 
 #if TARGET_PLATFORM == PLATFORM_WIN32
 void Sound::Play(LPCTSTR name)
-#else
-void Sound::Play(std::string name)
-#endif
 {
-	if(!sound->mute) 
+    if (!sound->mute)
     {
-        if(sound->loop)
+        if (sound->loop)
         {
             PlaySound(name, NULL, SND_ASYNC | SND_FILENAME | SND_LOOP);
         }
@@ -42,8 +39,13 @@ void Sound::Play(std::string name)
         {
             PlaySound(name, NULL, SND_ASYNC | SND_FILENAME);
         }
-	}
+    }
 }
+#else
+void Sound::Play(std::string name)
+{
+}
+#endif
 
 void Sound::Stop() 
 {
