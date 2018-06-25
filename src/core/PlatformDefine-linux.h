@@ -14,4 +14,6 @@
 #define ATOMAPI
 #endif
 
+#include <vector>
+
 #endif // _ATOM_PLATFORM_DEFINE_LINUX_H_
