@@ -24,7 +24,7 @@ public:
 #if TARGET_PLATFORM == PLATFORM_WIN32
 	static void Play(LPCTSTR name);
 #else
-    static void Play(string name);
+    static void Play(std::string name);
 #endif
 
 	static void Stop();

@@ -29,7 +29,7 @@ Sound* sound = new Sound;
 #if TARGET_PLATFORM == PLATFORM_WIN32
 void Sound::Play(LPCTSTR name)
 #else
-void Sound::Play(string name)
+void Sound::Play(std::string name)
 #endif
 {
 	if(!sound->mute) 
