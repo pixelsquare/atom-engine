@@ -75,8 +75,8 @@ bool Collision::HasCollidedWith(Collision &object)
         return false;
     }
 
-	if(this->colliderType == ColliderType::Cube && object.colliderType == ColliderType::Sphere ||
-		this->colliderType == ColliderType::Sphere && object.colliderType == ColliderType::Cube)
+	if((this->colliderType == ColliderType::Cube && object.colliderType == ColliderType::Sphere)
+	|| (this->colliderType == ColliderType::Sphere && object.colliderType == ColliderType::Cube))
     {
 		bool xHasNotCollided =
 			this->GetPosition().x - this->colliderOffset.x >
@@ -134,12 +134,12 @@ void Collision::DrawCollider()
 
 	if(!this->initCollider) 
     {
-		if(this->colliderType == ColliderType::Cube) 
+		//if(this->colliderType == ColliderType::Cube) 
         {
 			this->RescaleCube(this->colliderOffset);
 		}
 
-		if(this->colliderType == ColliderType::Sphere)
+		//if(this->colliderType == ColliderType::Sphere)
         {
 			this->RescaleSphere(this->radius);
 		}
