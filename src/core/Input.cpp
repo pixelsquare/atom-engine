@@ -48,7 +48,7 @@ void atomOnKeyDown(unsigned char key, int x, int y)
 
 	if(key == 27) 
     {
-		exit(1);
+		std::exit(1);
 	}
 }
 
