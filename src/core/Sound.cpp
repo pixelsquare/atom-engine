@@ -49,7 +49,9 @@ void Sound::Play(std::string name)
 
 void Sound::Stop() 
 {
+#if TARGET_PLATFORM == PLATFORM_WIN32
 	PlaySound(NULL, 0, 0);
+#endif
 }
 
 void Sound::Loop(bool loop) 
