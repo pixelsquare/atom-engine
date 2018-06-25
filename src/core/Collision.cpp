@@ -105,24 +105,24 @@ bool Collision::HasCollidedWith(Collision &object)
             return true;
         }
 	}
-	else 
-    {
-		Vector3f obj1Pos = this->GetPosition();
-		Vector3f obj2Pos = object.GetPosition();
+	//else 
+ //   {
+	//	Vector3f obj1Pos = this->GetPosition();
+	//	Vector3f obj2Pos = object.GetPosition();
 
-		this->relativePos = obj1Pos - obj2Pos;
-		this->distance = this->relativePos.Dot(this->relativePos, this->relativePos);
-		this->minDistance = this->radius + object.radius;
+	//	this->relativePos = obj1Pos - obj2Pos;
+	//	this->distance = this->relativePos.Dot(this->relativePos, this->relativePos);
+	//	this->minDistance = this->radius + object.radius;
 
-        if(this->distance <= this->minDistance * this->minDistance)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-	}
+ //       if(this->distance <= this->minDistance * this->minDistance)
+ //       {
+ //           return true;
+ //       }
+ //       else
+ //       {
+ //           return false;
+ //       }
+	//}
 }
 
 void Collision::DrawCollider() 
