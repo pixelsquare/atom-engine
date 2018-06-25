@@ -37,7 +37,7 @@ public:
 	void SetRandomVelocity(Vector3f randomVel);
 	void SetRandomVelocity(float x, float y, float z);
 
-	void SetColors(Color3* color, size_t size);
+	void SetColors(Color3* color, std::size_t size);
 	void EmitParticles();
 
 	long GetParticleCount();

@@ -102,7 +102,7 @@ void Particle::SetRandomVelocity(float x, float y, float z)
 	this->randomVelocity = Vector3f(x, y, z);
 }
 
-void Particle::SetColors(Color3* color, size_t size) 
+void Particle::SetColors(Color3* color, std::size_t size) 
 {
 	this->colorSize = size;
 	this->colors = color;
