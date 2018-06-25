@@ -86,6 +86,7 @@
     <ClInclude Include="..\core\Color3.h" />
     <ClInclude Include="..\core\Color4.h" />
     <ClInclude Include="..\core\GameObject.h" />
+    <ClInclude Include="..\core\GL-linux.h" />
     <ClInclude Include="..\core\GL-win32.h" />
     <ClInclude Include="..\core\Input.h" />
     <ClInclude Include="..\core\Light.h" />
@@ -93,12 +94,14 @@
     <ClInclude Include="..\core\Particle.h" />
     <ClInclude Include="..\core\Physics.h" />
     <ClInclude Include="..\core\PlatformConfig.h" />
+    <ClInclude Include="..\core\PlatformDefine-linux.h" />
     <ClInclude Include="..\core\PlatformDefine-win32.h" />
     <ClInclude Include="..\core\PlatformDefine.h" />
     <ClInclude Include="..\core\PlatformGL.h" />
     <ClInclude Include="..\core\PlatformMacros.h" />
     <ClInclude Include="..\core\Raycast.h" />
     <ClInclude Include="..\core\Sound.h" />
+    <ClInclude Include="..\core\StdC-linux.h" />
     <ClInclude Include="..\core\StdC-win32.h" />
     <ClInclude Include="..\core\StdC.h" />
     <ClInclude Include="..\core\Text.h" />

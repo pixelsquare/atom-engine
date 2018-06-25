@@ -90,6 +90,15 @@
     <ClInclude Include="..\core\Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\core\PlatformDefine-linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\GL-linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\StdC-linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\core\atom.cpp">
