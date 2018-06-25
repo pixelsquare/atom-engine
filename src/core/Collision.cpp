@@ -9,6 +9,8 @@
 
 #include "Collision.h"
 #include "PlatformGL.h"
+#include "Mathf.h"
+#include <cmath>
 
 ATOM_BEGIN
 
