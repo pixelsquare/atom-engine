@@ -16,9 +16,11 @@
 ATOM_BEGIN
 
 /* Options for the collider type */
-enum class ColliderType
+enum ColliderType
 {
-	None, Cube, Sphere
+	None = 0,
+    Cube,
+    Sphere
 };
 
 /* Class that holds the collision detection subsystem */

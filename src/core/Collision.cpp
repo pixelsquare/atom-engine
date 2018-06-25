@@ -23,7 +23,7 @@ Collision::Collision()
 , minDistance(0.0f)
 , distance(0.0f)
 , relativePos(Vector3f::ZERO)
-, colliderType(ColliderType::Cube)
+, colliderType(Cube)
 {
 }
 
