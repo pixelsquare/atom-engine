@@ -16,7 +16,10 @@
 #include <stdlib.h>
 #include <cstddef>
 #include <cstdlib>
+#include <cmath>
 #include <string.h>
+#include <stdio.h>
+#include <time.h>
 #endif // TARGET_PLATFORM == PLATFORM_LINUX
 
 #endif // _ATOM_STDC_LINUX_H_
