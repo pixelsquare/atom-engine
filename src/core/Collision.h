@@ -16,10 +16,10 @@
 ATOM_BEGIN
 
 /* Options for the collider type */
-typedef enum ColliderType
+enum class ColliderType
 {
 	None, Cube, Sphere
-} ColliderType;
+};
 
 /* Class that holds the collision detection subsystem */
 class ATOMAPI Collision : public Transform 
