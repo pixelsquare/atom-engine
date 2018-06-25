@@ -20,9 +20,7 @@ compile: $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(basename $(notdir $(wildcard
 	@echo
 
 $(OBJ_DIR)/atom.o: $(SRC_DIR)/atom.cpp
-$(OBJ_DIR)/Input.o: $(SRC_DIR)/Input.cpp
 $(OBJ_DIR)/Light.o: $(SRC_DIR)/Light.cpp
-$(OBJ_DIR)/Raycast.o: $(SRC_DIR)/Raycast.cpp
 
 $(OBJ_DIR)/Camera.o: $(SRC_DIR)/Camera.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
@@ -38,6 +36,9 @@ $(OBJ_DIR)/Color4.o: $(SRC_DIR)/Color4.cpp
 	
 $(OBJ_DIR)/GameObject.o: $(SRC_DIR)/GameObject.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	
+$(OBJ_DIR)/Input.o: $(SRC_DIR)/Input.cpp
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Mathf.o: $(SRC_DIR)/Mathf.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
@@ -46,6 +47,9 @@ $(OBJ_DIR)/Particle.o: $(SRC_DIR)/Particle.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 	
 $(OBJ_DIR)/Physics.o: $(SRC_DIR)/Physics.cpp
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	
+$(OBJ_DIR)/Raycast.o: $(SRC_DIR)/Raycast.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 	
 $(OBJ_DIR)/Sound.o: $(SRC_DIR)/Sound.cpp
