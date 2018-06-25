@@ -41,10 +41,11 @@ public:
 
 private:
 protected:
-    Color3 color;
     Vector3f position;
     Vector3f scale;
-    float angleRot; Vector3f axis;
+    Color3 color;
+    float angleRot; 
+    Vector3f axis;
 };
 
 ATOM_END
