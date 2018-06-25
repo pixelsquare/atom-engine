@@ -12,12 +12,16 @@
 
 #define PLATFORM_UNKNOWN    0x00
 #define PLATFORM_WIN32      0x01
+#define PLATFORM_LINUX      0x02
 
 #define TARGET_PLATFORM     PLATFORM_UNKNOWN
 
 #if defined(_WIN32) || defined(_WINDOWS)
     #undef TARGET_PLATFORM
     #define TARGET_PLATFORM PLATFORM_WIN32
+#elif defined(__linux__)
+    #undef TARGET_PLATFORM
+    #define TARGET_PLATFORM PLATFORM_LINUX
 #else
 	#undef TARGET_PLATFORM
     #define TARGET_PLATFORM PLATFORM_UNKNOWN
