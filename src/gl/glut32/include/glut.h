@@ -155,7 +155,7 @@ extern _CRTIMP void __cdecl exit(int);
 # define GLUTAPI extern
 # define GLUTCALLBACK
 /* Prototype exit for the non-Win32 case (see above). */
-extern void exit(int);
+//extern void exit(int); // Removed for linux distribution
 #endif
 
 /**

@@ -8,7 +8,6 @@
 */
 
 #include "Mathf.h"
-#include <cmath>
 
 ATOM_BEGIN
 

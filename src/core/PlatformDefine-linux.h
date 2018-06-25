@@ -14,6 +14,8 @@
 #define ATOMAPI
 #endif
 
+#include <assert.h>
+#include <cmath>
 #include <vector>
 
 #endif // _ATOM_PLATFORM_DEFINE_LINUX_H_

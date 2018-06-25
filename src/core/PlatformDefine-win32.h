@@ -25,6 +25,7 @@
 #endif
 
 #include <assert.h>
+#include <cmath>
 #include <vector>
 
 #ifndef NULL

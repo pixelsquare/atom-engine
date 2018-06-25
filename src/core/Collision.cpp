@@ -15,15 +15,17 @@
 ATOM_BEGIN
 
 Collision::Collision() 
-: colliderOffset(Vector3f::ONE)
-, initCollider(false)
+: cubeVertices(NULL)
+, cubeColor(NULL)
 , isActive(true)
 , applyCollision(true)
 , radius(1.0f)
 , minDistance(0.0f)
 , distance(0.0f)
 , relativePos(Vector3f::ZERO)
-, colliderType(Cube)
+, drawingType(0)
+, connectedPts(0)
+, initCollider(false)
 {
 }
 

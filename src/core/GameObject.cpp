@@ -57,7 +57,7 @@ ObjectLoader &ObjectLoader::operator=(const ObjectLoader& rhs)
 	this->connectedTris = this->indx;
 
 	this->vertices = new Vector3f[rhs.vec.size()];
-	for(int i = 0; i < rhs.vec.size(); i++) 
+	for(unsigned int i = 0; i < rhs.vec.size(); i++) 
     {
 		this->vertices[i] = rhs.vertices[i];
 	}
