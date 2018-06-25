@@ -70,16 +70,16 @@ typedef void            AEvoid;
 
 ATOM_BEGIN
 
-	///* important functions to be declared in main */
-	//extern void ATOMAPI atomStartFunc( void(*func)(void) );
-	//extern void ATOMAPI atomUpdateFunc( void(*func)(void) );
-	//extern void ATOMAPI atomInitialize(int argc, char **argv);
+	/* important functions to be declared in main */
+	extern void ATOMAPI atomStartFunc( void(*func)(void) );
+	extern void ATOMAPI atomUpdateFunc( void(*func)(void) );
+	extern void ATOMAPI atomInitialize(int argc, char **argv);
 
-	///* additional window settings for atom engine window */
-	//extern void ATOMAPI atomWindowWidth(int width);
-	//extern void ATOMAPI atomWindowHeight(int height);
-	//extern void ATOMAPI atomWindowName(char *name);
-	//extern void ATOMAPI atomWindowBGColor(double r, double g, double b, double a);
+	/* additional window settings for atom engine window */
+	extern void ATOMAPI atomWindowWidth(int width);
+	extern void ATOMAPI atomWindowHeight(int height);
+	extern void ATOMAPI atomWindowName(char *name);
+	extern void ATOMAPI atomWindowBGColor(double r, double g, double b, double a);
 
 ATOM_END
 
