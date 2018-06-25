@@ -17,7 +17,7 @@
 #include <cstddef>
 #include <cstdlib>
 #include <cmath>
-#include <string.h>
+#include <string>
 #include <stdio.h>
 #include <time.h>
 #endif // TARGET_PLATFORM == PLATFORM_LINUX
