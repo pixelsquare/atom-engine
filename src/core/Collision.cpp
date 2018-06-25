@@ -75,8 +75,8 @@ bool Collision::HasCollidedWith(Collision &object)
         return false;
     }
 
-	if(this->colliderType && object.colliderType == Cube ||
-		this->colliderType == Sphere && object.colliderType == Cube) 
+	if(this->colliderType && object.colliderType == ColliderType::Cube ||
+		this->colliderType == ColliderType::Sphere && object.colliderType == ColliderType::Cube)
     {
 		bool xHasNotCollided =
 			this->GetPosition().x - this->colliderOffset.x >
