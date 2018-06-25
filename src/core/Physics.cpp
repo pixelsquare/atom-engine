@@ -11,13 +11,13 @@
 
 ATOM_BEGIN
 
-Physics::Physics() 
-: mass(1.0f)
-, velocity(Vector3f::ZERO)
-, acceleration(Vector3f::ZERO)
-, useGravity(false)
+Physics::Physics()
+: useGravity(false)
 , gravityApplied(false)
 , isActive(true)
+, mass(1.0f)
+, velocity(Vector3f::ZERO)
+, acceleration(Vector3f::ZERO)
 {
 }
 
