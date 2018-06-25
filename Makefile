@@ -34,16 +34,16 @@ $(OBJ_DIR)/Time.o: $(SRC_DIR)/Time.cpp
 $(OBJ_DIR)/Transform.o: $(SRC_DIR)/Transform.cpp
 
 $(OBJ_DIR)/Color3.o: $(SRC_DIR)/Color3.cpp
-	# $(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Color4.o: $(SRC_DIR)/Color4.cpp
-	# $(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Mathf.o: $(SRC_DIR)/Mathf.cpp
-	# $(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Time.o: $(SRC_DIR)/Time.cpp
-	# $(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
+	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
 
 $(OBJ_DIR)/Vector3f.o: $(SRC_DIR)/Vector3f.cpp
 	$(CXX) $(CXXFLAGS) $(ATOMFLAGS) -c $^ -o $@
