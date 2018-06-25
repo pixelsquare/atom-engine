@@ -8,6 +8,7 @@
 */
 
 #include "Input.h"
+#include "StdC.h"
 #include "PlatformGL.h"
 
 ATOM_BEGIN
