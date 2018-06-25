@@ -1,4 +1,4 @@
-CXX = g++
+CXX = g++ -std=c++11
 CXXFLAGS = -shared -g -Wall -Wno-unknown-pragmas -fPIC -Wno-unused-function
 ATOMFLAGS = -D_USRDLL -DATOM_STATIC -static-libgcc -static-libstdc++
 GLFLAGS = -L/src/gl/glut32/lib -I/src/gl/glut32/include -DGLUT_NO_LIB_PRAGMA -lglut32 -lopengl32 -lglu32
